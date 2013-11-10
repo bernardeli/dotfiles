@@ -1,0 +1,29 @@
+require 'irb/completion'
+IRB.conf[:SAVE_HISTORY] = 1000
+IRB.conf[:AUTO_INDENT] = true
+
+class Array
+  def self.toy(n = 10, &block)
+    block_given? ? Array.new(n,&block) : Array.new(n) {|i| i+1}
+  end
+end
+
+class Hash
+  def self.toy(n = 10)
+    Hash[Array.toy(n).zip(Array.toy(n){|c| (96+(c+1)).chr})]
+  end
+end
+
+IRB.conf[:AT_EXIT] << Proc.new { puts "See you later!" }
+
+if defined?(Rails)
+  if !!Rails.root.to_s.match(/kinnect/) && Organisation.any?
+    Organisation.current_id = Organisation.last.id
+    @pep = Service.first
+  end
+end
+
+def log_queries_please!
+  ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
+end
+

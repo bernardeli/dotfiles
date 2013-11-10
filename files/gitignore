@@ -1,0 +1,9 @@
+*.swp
+*.swo
+*.swn
+.rvmrc
+fse-out.log
+.rbenv-version
+.ruby-version
+custom_plan.rb
+zeus.json

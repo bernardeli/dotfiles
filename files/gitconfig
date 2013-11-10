@@ -1,0 +1,28 @@
+[user]
+  email = ricardobcs@gmail.com
+  name = Ricardo Bernardeli
+[color]
+  ui = auto
+[alias]
+  st = status
+  d = diff
+  c = commit -m
+  ci = commit -am
+  co = checkout
+  cp = cherry-pick
+  l = log
+  b = branch
+  logtoday = log --since='6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
+  logyesterday = log --since='yesterday' --before='today 6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
+  fp = "!f() { git symbolic-ref HEAD | cut -d \\/ -f3 ; }; git fetch ; git pull --rebase origin `f`"
+  conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; mvim -p `f`"
+  next = "!git add . && git rebase --continue"
+  discart = "!git add . && git checkout -f"
+  aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
+[core]
+  excludesfile = /Users/ric/.gitignore
+  ignorecase = false
+[branch]
+  autosetuprebase = always
+[push]
+  default = current
