@@ -14,6 +14,17 @@ class Hash
   end
 end
 
+begin
+  require 'pry'
+  Pry.start
+  exit
+rescue LoadError => e
+  warn "=> Unable to load pry (#{e})"
+end
+
+require 'awesome_print'
+AwesomePrint.irb!
+
 IRB.conf[:AT_EXIT] << Proc.new { puts "See you later!" }
 
 if defined?(Rails)
