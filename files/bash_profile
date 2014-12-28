@@ -32,6 +32,26 @@ alias bower='noglob bower'
 alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w kern.sysv.shmall=65536'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
+##### Docker
+alias dst="docker stop"
+alias drm="docker rm"
+alias dps="docker ps -a"
+alias dmi="docker images"
+
+dclean() {
+  docker rm $(docker ps -aq)
+  docker rmi $(docker images | grep none | awk '{ print $3; }')
+}
+
+dbash() {
+  docker exec -t -i $1 /bin/bash
+}
+
+dstoprm() {
+  docker stop $1 ; docker rm $1
+}
+
+
 n() { cd ~/workspace/netengine/$1; }
 _n() { _files -W ~/workspace/netengine -/; }
 compdef _n n
