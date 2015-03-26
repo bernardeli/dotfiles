@@ -1,5 +1,6 @@
 ########## Alias ##########
 
+alias psg="ps aux | grep -v grep | grep -i --color=auto $1"
 alias ll='ls -lha'
 alias pj='python -mjson.tool'
 alias curl='nocorrect curl'
@@ -34,6 +35,10 @@ alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w k
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 ##### Docker
+export DOCKER_HOST="tcp://192.168.59.103:2376"
+export DOCKER_CERT_PATH="$HOME/.boot2docker/certs/boot2docker-vm"
+export DOCKER_TLS_VERIFY=1
+
 alias d="docker"
 alias dst="docker stop"
 alias drm="docker rm"
@@ -71,4 +76,19 @@ function spoof_mac_address {
 
 tree() { find $1 | sed -e 's;[^/]*/;|__;g;s;__|;  |;g'; }
 
+# ZSH completion trash
 export ZDOTDIR="$HOME/.oh-my-zsh"
+
+# rbenv
+if [ -d "$HOME/.rbenv" ]
+then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
+
+# Node versioning
+if [ -f "$HOME/.nvm/nvm.sh" ]
+then
+  source ~/.nvm/nvm.sh
+fi
+
