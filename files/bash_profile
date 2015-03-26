@@ -1,6 +1,6 @@
 ########## Alias ##########
 
-alias ll='ls -la'
+alias ll='ls -lha'
 alias pj='python -mjson.tool'
 alias curl='nocorrect curl'
 alias meteor='nocorrect meteor'
@@ -19,6 +19,7 @@ alias rake='bundle exec rake'
 alias rails='bundle exec rails'
 alias cap='bundle exec cap'
 alias guard='bundle exec guard'
+alias sidekiq='bundle exec sidekiq'
 alias rc='rails console'
 alias bxc='rails console'
 alias rs='rails server'
@@ -33,10 +34,12 @@ alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w k
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 ##### Docker
+alias d="docker"
 alias dst="docker stop"
 alias drm="docker rm"
 alias dps="docker ps -a"
 alias dmi="docker images"
+alias drun="docker run"
 
 dclean() {
   docker rm $(docker ps -aq)
@@ -52,8 +55,8 @@ dstoprm() {
 }
 
 
-n() { cd ~/workspace/netengine/$1; }
-_n() { _files -W ~/workspace/netengine -/; }
+n() { cd ~/Projects/netengine/$1; }
+_n() { _files -W ~/Projects/netengine -/; }
 compdef _n n
 
 function hlr {
@@ -68,3 +71,4 @@ function spoof_mac_address {
 
 tree() { find $1 | sed -e 's;[^/]*/;|__;g;s;__|;  |;g'; }
 
+export ZDOTDIR="$HOME/.oh-my-zsh"

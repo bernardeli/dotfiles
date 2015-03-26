@@ -23,3 +23,8 @@ def log_queries_please!
   ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
 end
 
+def go_resque
+  if defined?(Resque)
+    Resque::Worker.new("*").work(10)
+  end
+end

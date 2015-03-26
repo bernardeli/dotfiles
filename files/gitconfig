@@ -23,7 +23,7 @@
   discart = "!git add . && git checkout -f"
   aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
 [core]
-  excludesfile = /Users/ric/.gitignore
+  excludesfile = /Users/ricardo/.gitignore
   ignorecase = false
 [branch]
   autosetuprebase = always
