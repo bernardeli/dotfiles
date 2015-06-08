@@ -14,7 +14,5 @@ cd ~/.dotfiles/files; for file in *; do
 done
 
 echo "source \$HOME/.dotfiles/files/bash_profile" >> ~/.zshrc
-echo "source \$HOME/.dotfiles/keysrc" >> ~/.zshrc
-
 
 echo -ne "\n${GREEN}Done! :-)${NO_COLOR}\n\n"
