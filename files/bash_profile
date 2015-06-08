@@ -45,6 +45,8 @@ alias drm="docker rm"
 alias dps="docker ps -a"
 alias dmi="docker images"
 alias drun="docker run"
+alias fig='docker-compose'
+alias dcs='docker-compose'
 
 dclean() {
   docker rm $(docker ps -aq)
@@ -63,6 +65,10 @@ dstoprm() {
 n() { cd ~/Projects/netengine/$1; }
 _n() { _files -W ~/Projects/netengine -/; }
 compdef _n n
+
+o() { cd ~/Projects/netengine/outfit/$1; }
+_o() { _files -W ~/Projects/netengine/outfit -/; }
+compdef _o o
 
 function hlr {
   filename=`echo $1 | cut -d . -f 1`
