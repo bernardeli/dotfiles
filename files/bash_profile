@@ -62,13 +62,9 @@ dstoprm() {
 }
 
 
-n() { cd ~/Projects/netengine/$1; }
-_n() { _files -W ~/Projects/netengine -/; }
-compdef _n n
-
-o() { cd ~/Projects/netengine/outfit/$1; }
-_o() { _files -W ~/Projects/netengine/outfit -/; }
-compdef _o o
+e() { cd ~/Code/$1; }
+_e() { _files -W ~/Code -/; }
+compdef _e e
 
 function hlr {
   filename=`echo $1 | cut -d . -f 1`
