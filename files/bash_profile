@@ -1,7 +1,9 @@
 ########## Alias ##########
 
 alias psg="ps aux | grep -v grep | grep -i --color=auto $1"
-alias ll='ls -lha'
+alias ll='ls -lah --color'
+alias ls='ls -h --color'
+alias lsg='ll | grep'
 alias pj='python -mjson.tool'
 alias curl='nocorrect curl'
 alias meteor='nocorrect meteor'
@@ -10,6 +12,15 @@ alias gpre='grep'
 alias grpe='grep'
 alias gtix='gitx'
 alias gti='git'
+alias ag='ag -i'
+alias -g C='| wc -l'
+alias -g H='| head'
+alias -g L="| less"
+alias -g S='| sort'
+alias -g G='| grep' # now you can do: ls foo G something
+
+# find all files containing $1 in the name
+function lsf() { ls **/*$1* }
 
 ## Rails
 alias ss='script/server'
@@ -28,16 +39,13 @@ alias rials='rails'
 alias dcm='rake db:drop db:create db:migrate'
 alias dcmt='rake db:drop db:create db:migrate db:test:prepare'
 alias dcmts='rake db:drop db:create db:migrate db:test:prepare db:seed'
-alias z='zeus'
 alias bower='noglob bower'
 
 alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w kern.sysv.shmall=65536'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 ##### Docker
-export DOCKER_HOST="tcp://192.168.59.103:2376"
-export DOCKER_CERT_PATH="$HOME/.boot2docker/certs/boot2docker-vm"
-export DOCKER_TLS_VERIFY=1
+eval "$(docker-machine env default)"
 
 alias d="docker"
 alias dst="docker stop"
@@ -60,7 +68,6 @@ dbash() {
 dstoprm() {
   docker stop $1 ; docker rm $1
 }
-
 
 e() { cd ~/Code/$1; }
 _e() { _files -W ~/Code -/; }
