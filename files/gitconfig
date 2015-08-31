@@ -5,6 +5,7 @@
   ui = auto
 [alias]
   st = status
+  s = status
   d = diff
   c = commit -m
   ci = commit -am
@@ -24,7 +25,7 @@
   aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
   x = "!gitx"
 [core]
-  excludesfile = /Users/ricardo/.gitignore
+  excludesfile = /Users/ric/.gitignore
   ignorecase = false
 [branch]
   autosetuprebase = always
