@@ -101,3 +101,5 @@ then
   source ~/.nvm/nvm.sh
 fi
 
+# Direnv
+eval "$(direnv hook zsh)"
