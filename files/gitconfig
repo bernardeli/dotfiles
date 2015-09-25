@@ -23,10 +23,12 @@
   next = "!git add . && git rebase --continue"
   discart = "!git add . && git checkout -f"
   aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
+  since-master = diff --name-only origin/master
   x = "!gitx"
 [core]
   excludesfile = /Users/ric/.gitignore
   ignorecase = false
+  editor = /usr/bin/vim
 [branch]
   autosetuprebase = always
 [push]

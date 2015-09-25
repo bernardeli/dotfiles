@@ -1,5 +1,6 @@
 ########## Alias ##########
 
+alias fastcop='git since-master | grep \\.rb$ | xargs ls 2>/dev/null | xargs rubocop --force-exclusion'
 alias psg="ps aux | grep -v grep | grep -i --color=auto $1"
 alias ll='ls -lah --color'
 alias ls='ls -h --color'
@@ -73,6 +74,10 @@ e() { cd ~/Code/$1; }
 _e() { _files -W ~/Code -/; }
 compdef _e e
 
+ec() { cd ~/Code/payments/components/$1; }
+_ec() { _files -W ~/Code/payments/components -/; }
+compdef _ec ec
+
 function hlr {
   filename=`echo $1 | cut -d . -f 1`
   highlight --syntax ruby -k Menlo -K 22 -O rtf -s edit-xcode $1 > $filename.rtf
@@ -96,10 +101,10 @@ then
 fi
 
 # Node versioning
-if [ -f "$HOME/.nvm/nvm.sh" ]
-then
-  source ~/.nvm/nvm.sh
-fi
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # Direnv
 eval "$(direnv hook zsh)"
+
+export CUCUMBER_FORMAT=progress
