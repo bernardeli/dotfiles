@@ -104,7 +104,12 @@ fi
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# Direnv
+# Direnv - Require brew install direnv
 eval "$(direnv hook zsh)"
 
 export CUCUMBER_FORMAT=progress
+
+### Require brew install hub
+eval "$(hub alias -s)"
+fpath=(~/.dotfiles/zsh/_hub $fpath)
+autoload -U compinit && compinit

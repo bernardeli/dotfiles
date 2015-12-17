@@ -13,6 +13,7 @@
   cp = cherry-pick
   l = log
   b = branch
+  ri = rebase -i
   logtoday = log --since='6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
   logyesterday = log --since='yesterday' --before='today 6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
   assume   = update-index --assume-unchanged
