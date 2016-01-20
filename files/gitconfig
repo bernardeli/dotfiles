@@ -14,6 +14,7 @@
   l = log
   b = branch
   ri = rebase -i
+  amend = commit --amend --no-edit
   logtoday = log --since='6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
   logyesterday = log --since='yesterday' --before='today 6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
   assume   = update-index --assume-unchanged
@@ -26,6 +27,7 @@
   aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
   since-master = diff --name-only origin/master
   x = "!gitx"
+  tree = log --oneline --decorate --graph --abbrev-commit
 [core]
   excludesfile = /Users/ric/.gitignore
   ignorecase = false
