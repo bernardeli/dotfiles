@@ -22,7 +22,7 @@
   unassume = update-index --no-assume-unchanged
   assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
   fp = "!f() { git symbolic-ref HEAD | cut -d \\/ -f3 ; }; git fetch ; git pull --rebase origin `f`"
-  conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; mvim -p `f`"
+  conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim -p `f`"
   next = "!git add . && git rebase --continue"
   discart = "!git add . && git checkout -f"
   aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
