@@ -55,8 +55,7 @@ alias drm="docker rm"
 alias dps="docker ps -a"
 alias dmi="docker images"
 alias drun="docker run"
-alias fig='docker-compose'
-alias dcs='docker-compose'
+alias doco='docker-compose'
 
 dclean() {
   docker rm $(docker ps -aq)
