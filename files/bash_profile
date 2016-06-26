@@ -125,3 +125,6 @@ export CUCUMBER_FORMAT=progress
 eval "$(hub alias -s)"
 fpath=(~/.dotfiles/zsh/_hub $fpath)
 autoload -U compinit && compinit
+
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
