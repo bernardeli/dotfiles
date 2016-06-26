@@ -101,8 +101,20 @@ then
 fi
 
 # Node versioning
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+if [ -d "$HOME/.nvm" ]
+then
+  export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
+fi
+
+# Autoload node version
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
 
 # Direnv - Require brew install direnv
 eval "$(direnv hook zsh)"
