@@ -27,6 +27,11 @@
   discart = "!git add . && git checkout -f"
   aftermerge = "!f() { git checkout master && git pull --rebase && git remote prune origin && git branch -d $1; }; f"
   since-master = diff --name-only origin/master
+  outstanding-branches = "!f() { git branch | grep -vw master | grep -v '^*' | wc -l; }; f"
+  branch-master = "!f() { git branch $1 origin/master --no-track && git co $1; }; f"
+  branch-master-regular = "!f() { git branch-master "$1-`date +%Y%m%d`"; }; f"
+  autofix = "!f() { git commit --fixup $(git log -n 1 --pretty=format:%H -- \"$GIT_PREFIX$1\") \"$GIT_PREFIX$1\"; }; f"
+  bm = branch-master
   x = "!gitx"
   tree = log --oneline --decorate --graph --abbrev-commit
 [core]
