@@ -141,3 +141,11 @@ function rcp() {
 function rcs() {
   pur nfp-api-staging bin/rails c
 }
+
+function bk() {
+  project=$1
+  branch=$2
+  branch=${branch:-$(git rev-parse --abbrev-ref HEAD)}
+  branch=${branch:-master}
+  open https://buildkite.com/everyday-hero/$project/builds?branch=$branch
+}
