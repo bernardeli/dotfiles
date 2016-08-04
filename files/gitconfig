@@ -14,7 +14,7 @@
   l = log
   b = branch
   ri = rebase -i
-  rim = rebase -i master
+  rim = rebase -i master --autosquash
   amend = commit -a --amend --no-edit
   logtoday = log --since='6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
   logyesterday = log --since='yesterday' --before='today 6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
