@@ -134,6 +134,14 @@ function pur(){
   plain-utils run "$@"
 }
 
+function nfps(){
+  pur nfp-api-staging "$@"
+}
+
+function nfpp(){
+  pur nfp-api-production "$@"
+}
+
 function rcp() {
   pur nfp-api-production bin/rails c
 }
