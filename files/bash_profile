@@ -101,20 +101,42 @@ then
 fi
 
 # Node versioning
-if [ -d "$HOME/.nvm" ]
-then
+# if [ -d "$HOME/.nvm" ]
+# then
+#   export NVM_DIR="$HOME/.nvm"
+#   . "$(brew --prefix nvm)/nvm.sh"
+# fi
+#
+# # Autoload node version
+# autoload -U add-zsh-hook
+# load-nvmrc() {
+#   if [[ -f .nvmrc && -r .nvmrc ]]; then
+#     nvm use
+#   fi
+# }
+# add-zsh-hook chpwd load-nvmrc
+
+# I want nvm not to fuck with my shell boot time
+nvm() {
+  unset -f nvm
   export NVM_DIR="$HOME/.nvm"
   . "$(brew --prefix nvm)/nvm.sh"
-fi
-
-# Autoload node version
-autoload -U add-zsh-hook
-load-nvmrc() {
-  if [[ -f .nvmrc && -r .nvmrc ]]; then
-    nvm use
-  fi
+  nvm "$@"
 }
-add-zsh-hook chpwd load-nvmrc
+
+node() {
+  unset -f node
+  export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
+  node "$@"
+}
+
+npm() {
+  unset -f npm
+  export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
+  npm "$@"
+}
 
 # Direnv - Require brew install direnv
 eval "$(direnv hook zsh)"
