@@ -172,6 +172,14 @@ function rcs() {
   pur nfp-api-staging bin/rails c
 }
 
+function sadmin(){
+  plain-utils ssh staging admin
+}
+
+function padmin(){
+  plain-utils ssh production admin
+}
+
 function bk() {
   project=$1
   branch=$2
