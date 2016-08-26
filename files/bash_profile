@@ -46,9 +46,6 @@ alias bower='noglob bower'
 alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w kern.sysv.shmall=65536'
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
-##### Docker
-eval "$(docker-machine env default)"
-
 alias d="docker"
 alias dst="docker stop"
 alias drm="docker rm"
