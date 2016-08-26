@@ -52,7 +52,7 @@ alias drm="docker rm"
 alias dps="docker ps -a"
 alias dmi="docker images"
 alias drun="docker run"
-alias doco='docker-compose'
+alias doco="docker-compose"
 
 dclean() {
   docker rm $(docker ps -aq)
@@ -153,20 +153,20 @@ function pur(){
   plain-utils run "$@"
 }
 
-function nfps(){
-  pur nfp-api-staging "$@"
+function ns(){
+  pur nexus-staging "$@"
 }
 
-function nfpp(){
-  pur nfp-api-production "$@"
+function np(){
+  pur nexus-production "$@"
 }
 
 function rcp() {
-  pur nfp-api-production bin/rails c
+  pur nexus-production bin/rails c
 }
 
 function rcs() {
-  pur nfp-api-staging bin/rails c
+  pur nexus-staging bin/rails c
 }
 
 function sadmin(){
