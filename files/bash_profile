@@ -186,3 +186,8 @@ function bk() {
   branch=${branch:-master}
   open "https://buildkite.com/everyday-hero/$project/builds?branch=$branch"
 }
+
+function sshp(){
+  server="$1" && shift
+  ssh $server.plain.edh.ro "$@"
+}
