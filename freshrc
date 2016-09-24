@@ -1,5 +1,6 @@
 fresh JonathonMA/fresh bin/fresh --bin
 
+
 fresh-options --file=~/.zshrc
   fresh shell/zsh.sh
   fresh shell/path.sh
@@ -37,3 +38,24 @@ fresh-options
 fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
 fresh bernardeli/.osx .osx --file --ref=ric
+
+### VIM
+
+fresh-options --file=~/.vimrc --marker=\"
+  fresh twe4ked/dotfiles vim/vundle_before.vim
+
+  fresh vim/vundle.vim
+  fresh vim/plugins/*
+  fresh vim/auto_completion.vim
+  fresh vim/colours.vim
+  fresh vim/file_type_detection.vim
+  fresh vim/aliases.vim
+  fresh vim/splits.vim
+  fresh vim/globals.vim
+
+  fresh jasoncodes/dotfiles vim/config/auto_mkdir.vim
+  fresh jasoncodes/dotfiles vim/plugins/tabular.vim
+  fresh jasoncodes/dotfiles vim/config/undo.vim
+
+  fresh twe4ked/dotfiles vim/vundle_after.vim
+fresh-options
