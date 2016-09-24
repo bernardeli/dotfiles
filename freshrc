@@ -1,0 +1,39 @@
+fresh JonathonMA/fresh bin/fresh --bin
+
+fresh-options --file=~/.zshrc
+  fresh shell/zsh.sh
+  fresh shell/path.sh
+  fresh freshshell/fresh contrib/source-build.sh
+  fresh rupa/z z.sh
+fresh-options
+
+fresh shell/aliases/*
+
+fresh-options --file=~/.gitignore --marker
+  fresh github/gitignore Global/Vim.gitignore
+  fresh github/gitignore Global/macOS.gitignore
+  fresh github/gitignore Global/Tags.gitignore
+fresh-options
+
+fresh-options --file
+  fresh config/ackrc
+  fresh config/ctags
+  fresh config/gemrc
+  fresh config/irbrc
+  fresh config/npmrc
+  fresh config/rspec
+fresh-options
+
+fresh-options --file=~/.gitconfig --marker
+  fresh git/config
+  fresh git/alias
+fresh-options
+
+fresh-options --bin
+  fresh jasoncodes/dotfiles bin/loop
+  fresh git/git contrib/diff-highlight/diff-highlight
+fresh-options
+
+fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
+
+fresh bernardeli/.osx .osx --file --ref=ric

@@ -1,0 +1,24 @@
+[user]
+  email = ricardobcs@gmail.com
+  name = Ricardo Bernardeli
+[color]
+  ui = auto
+[github]
+  user = bernardeli
+[core]
+  excludesfile = ~/.gitignore
+  ignorecase = false
+  editor = vim
+[branch]
+  autosetuprebase = always
+[push]
+  default = current
+[diff]
+  compactionHeuristic = true
+
+[interactive]
+  diffFilter = diff-highlight
+[pager]
+  log = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less

@@ -1,8 +1,3 @@
-[user]
-  email = ricardobcs@gmail.com
-  name = Ricardo Bernardeli
-[color]
-  ui = auto
 [alias]
   st = status
   s = status
@@ -35,21 +30,3 @@
   bm = branch-master
   x = "!gitx"
   tree = log --oneline --decorate --graph --abbrev-commit
-[core]
-  excludesfile = /Users/ric/.gitignore
-  ignorecase = false
-  editor = /usr/bin/vim
-[branch]
-  autosetuprebase = always
-[push]
-  default = current
-[diff]
-  compactionHeuristic = true
-
-# curl https://raw.githubusercontent.com/git/git/master/contrib/diff-highlight/diff-highlight > /usr/local/bin/diff-highlight && chmod +x /usr/local/bin/diff-highlight
-[interactive]
-  diffFilter = diff-highlight
-[pager]
-  log = diff-highlight | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
