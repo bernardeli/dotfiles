@@ -1,27 +1,42 @@
-update
-upgrade
+brew ack
+brew ansible
+brew awscli
+brew coreutils
+brew ctags
+brew curl
+brew direnv
+brew dnscrypt-proxy
+brew elixir
+brew gist
+brew git
+brew go
+brew heroku-toolbelt
+brew htop-osx
+brew hub
+brew imagemagick
+brew jq
+brew nvm
+brew rbenv
+brew ruby-build
+brew sassc
+brew terraform
+brew vim --override-system-vim
+brew wget
+brew zsh
 
-install ack
-install ansible
-install awscli
-install coreutils
-install ctags
-install curl
-install direnv
-install dnscrypt-proxy
-install elixir
-install gist
-install git
-install go
-install heroku-toolbelt
-install hub
-install imagemagick
-install jq
-install nvm
-install rbenv
-install ruby-build
-install sassc
-install the_silver_searcher
-install vim --override-system-vim
-install wget
-install zsh
+cask 1password
+cask caffeine
+cask clipmenu
+cask cloak
+cask docker
+cask dropbox
+cask firefox
+cask flux
+cask google-chrome
+cask iterm2
+cask skype
+cask slack
+cask spotify
+cask tunnelbear
+
+mas divvy
