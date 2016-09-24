@@ -33,3 +33,5 @@ fresh-options --bin
 fresh-options
 
 fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
+
+fresh bernardeli/.osx .osx --file --ref=ric
