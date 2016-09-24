@@ -31,3 +31,5 @@ fresh-options
 fresh-options --bin
   fresh git/git contrib/diff-highlight/diff-highlight
 fresh-options
+
+fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
