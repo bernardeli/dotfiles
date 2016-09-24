@@ -30,6 +30,7 @@ fresh-options --file=~/.gitconfig --marker
 fresh-options
 
 fresh-options --bin
+  fresh jasoncodes/dotfiles bin/loop
   fresh git/git contrib/diff-highlight/diff-highlight
 fresh-options
 
