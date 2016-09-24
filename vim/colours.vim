@@ -8,7 +8,10 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 " colorscheme Tomorrow-Night-Bright
 
 Plugin 'mhartington/oceanic-next'
-colorscheme OceanicNext
+" colorscheme OceanicNext
+
+Plugin 'dracula/vim'
+colorscheme dracula
 
 set cursorline
 set cursorcolumn
