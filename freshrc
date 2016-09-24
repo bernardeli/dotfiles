@@ -4,6 +4,7 @@ fresh-options --file=~/.zshrc
   fresh shell/zsh.sh
   fresh shell/path.sh
   fresh freshshell/fresh contrib/source-build.sh
+  fresh rupa/z z.sh
 fresh-options
 
 fresh shell/aliases/*
