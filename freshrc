@@ -1,13 +1,29 @@
 fresh JonathonMA/fresh bin/fresh --bin
+fresh freshshell/fresh contrib/source-build.sh --file=~/.zshrc
 
+fresh shell/zsh/completion/init
+fresh shell/zsh/options
+fresh jamesottaway/dotfiles lib/zsh-completion-fpath
 
-fresh-options --file=~/.zshrc
-  fresh shell/zsh.sh
-  fresh shell/path.sh
-  fresh freshshell/fresh contrib/source-build.sh
-  fresh rupa/z z.sh
-fresh-options
+fresh robbyrussell/oh-my-zsh plugins/git/git.plugin.zsh
+fresh robbyrussell/oh-my-zsh plugins/compleat/compleat.plugin.zsh
+fresh robbyrussell/oh-my-zsh lib/completion.zsh
+fresh robbyrussell/oh-my-zsh lib/directories.zsh
+fresh robbyrussell/oh-my-zsh lib/git.zsh
+fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
+fresh robbyrussell/oh-my-zsh lib/misc.zsh
+fresh robbyrussell/oh-my-zsh lib/grep.zsh
+fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
+fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
+fresh robbyrussell/oh-my-zsh themes/robbyrussell.zsh-theme
 
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+fresh zsh-users/zsh-completions src/_gist --file=completion/_gist
+fresh zsh-users/zsh-completions src/_nvm --file=completion/_nvm
+fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
+fresh zsh-users/zsh-completions src/_rspec --file=completion/_rspec
+
+fresh shell/path.sh
 fresh shell/aliases/*
 
 fresh-options --file=~/.gitignore --marker
@@ -40,7 +56,6 @@ fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 fresh bernardeli/.osx .osx --file --ref=ric
 
 ### VIM
-
 fresh-options --file=~/.vimrc --marker=\"
   fresh twe4ked/dotfiles vim/vundle_before.vim
 

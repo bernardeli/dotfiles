@@ -2,12 +2,9 @@
 
 alias fastcop='git since-master | grep \\.rb$ | xargs ls 2>/dev/null | xargs rubocop --force-exclusion'
 alias psg="ps aux | grep -v grep | grep -i --color=auto $1"
-alias ll='ls -lah --color'
-alias ls='ls -h --color'
+alias ll='ls -lGAh'
 alias lsg='ll | grep'
 alias pj='python -mjson.tool'
-alias curl='nocorrect curl'
-alias meteor='nocorrect meteor'
 alias Grep='grep'
 alias gpre='grep'
 alias grpe='grep'
@@ -24,8 +21,6 @@ alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w k
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 # ZSH completion trash
-export ZDOTDIR="$HOME/.oh-my-zsh"
-
 export CUCUMBER_FORMAT=progress
 
 alias reload=". ~/.zshrc"

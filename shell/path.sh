@@ -12,11 +12,10 @@ function append_path() {
 
 append_path "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 append_path "/usr/local/opt/go/libexec/bin"
-prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
+append_path "/usr/local/opt/coreutils/libexec/gnubin"
 
 # TODO: Revisit this.
-prepend_path "~/Code/plain-utils/bin"
-
+prepend_path "/Users/ric/Code/plain-utils/bin"
 
 unset prepend_path
 unset append_path

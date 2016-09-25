@@ -49,3 +49,8 @@ function sshp(){
   server="$1" && shift
   ssh $server.plain.edh.ro "$@"
 }
+
+# Gives you `complete` function used by plain-utils
+autoload -U bashcompinit
+bashcompinit -i
+source "/Users/ric/Code/plain-utils/etc/bash_completion"
