@@ -2,8 +2,7 @@
 
 alias fastcop='git since-master | grep \\.rb$ | xargs ls 2>/dev/null | xargs rubocop --force-exclusion'
 alias psg="ps aux | grep -v grep | grep -i --color=auto $1"
-alias ll='ls -lah --color'
-alias ls='ls -h --color'
+alias ll='ls -lGAh'
 alias lsg='ll | grep'
 alias pj='python -mjson.tool'
 alias Grep='grep'
