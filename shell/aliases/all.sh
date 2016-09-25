@@ -21,8 +21,6 @@ alias beforepostgres='sudo sysctl -w kern.sysv.shmmax=16777216; sudo sysctl -w k
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
 # ZSH completion trash
-export ZDOTDIR="$HOME/.oh-my-zsh"
-
 export CUCUMBER_FORMAT=progress
 
 alias reload=". ~/.zshrc"
