@@ -1,6 +1,7 @@
 fresh JonathonMA/fresh bin/fresh --bin
 fresh freshshell/fresh contrib/source-build.sh --file=~/.zshrc
 
+# Shell
 fresh shell/zsh/completion/init
 fresh shell/zsh/options
 fresh jamesottaway/dotfiles lib/zsh-completion-fpath
@@ -26,12 +27,19 @@ fresh zsh-users/zsh-completions src/_rspec --file=completion/_rspec
 fresh shell/path.sh
 fresh shell/aliases/*
 
+# Git
 fresh-options --file=~/.gitignore --marker
   fresh github/gitignore Global/Vim.gitignore
   fresh github/gitignore Global/macOS.gitignore
   fresh github/gitignore Global/Tags.gitignore
 fresh-options
 
+fresh-options --file=~/.gitconfig --marker
+  fresh git/config
+  fresh git/alias
+fresh-options
+
+# General config files
 fresh-options --file
   fresh config/ackrc
   fresh config/ctags
@@ -41,11 +49,7 @@ fresh-options --file
   fresh config/rspec
 fresh-options
 
-fresh-options --file=~/.gitconfig --marker
-  fresh git/config
-  fresh git/alias
-fresh-options
-
+# Misc
 fresh-options --bin
   fresh jasoncodes/dotfiles bin/loop
   fresh git/git contrib/diff-highlight/diff-highlight
@@ -55,7 +59,7 @@ fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
 
 fresh bernardeli/.osx .osx --file --ref=ric
 
-### VIM
+### Vim
 fresh-options --file=~/.vimrc --marker=\"
   fresh twe4ked/dotfiles vim/vundle_before.vim
 
