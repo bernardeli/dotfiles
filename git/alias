@@ -13,8 +13,6 @@
   cf = commit --fixup
   rim = rebase -i master --autosquash
   amend = commit -a --amend --no-edit
-  logtoday = log --since='6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
-  logyesterday = log --since='yesterday' --before='today 6am' --pretty=format:'* %s' --author='Ricardo Bernardeli'
   assume   = update-index --assume-unchanged
   unassume = update-index --no-assume-unchanged
   assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
