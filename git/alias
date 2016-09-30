@@ -8,6 +8,7 @@
   cp = cherry-pick
   l = log
   b = branch
+  bd = branch -D
   ri = rebase -i
   cf = commit --fixup
   rim = rebase -i master --autosquash
