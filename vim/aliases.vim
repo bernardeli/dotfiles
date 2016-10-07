@@ -17,4 +17,7 @@ cab Ag Ack
 cab ack Ack
 cab TAbnew tabnew
 cab Tabnew tabnew
+cab REname Rename
+cab Renaem Rename
+cab REnaem Rename
 ab bp require 'pry'; binding.pry
