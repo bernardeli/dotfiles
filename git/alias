@@ -29,3 +29,5 @@
   bm = branch-master
   x = "!gitx"
   tree = log --oneline --decorate --graph --abbrev-commit
+  wip = "!f() { git add -A && git commit -m \"WIP\"; }; f"
+  unwip = "!f() { git log -n 1 | grep -q -c \"WIP\" && git reset HEAD~1; }; f"
