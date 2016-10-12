@@ -26,3 +26,4 @@
 --ignore-file=match:.rbenv-version
 --ignore-file=match:.rspec
 --ignore-file=match:.rvmrc
+--ignore-file=match:tags
