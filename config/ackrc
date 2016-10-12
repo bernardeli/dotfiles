@@ -9,7 +9,6 @@
 --ignore-dir=dragonfly
 --ignore-dir=javascripts/lib
 --ignore-dir=log
---ignore-dir=spec
 --ignore-dir=test
 --ignore-dir=tmp
 --ignore-dir=public/system
