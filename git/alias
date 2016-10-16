@@ -31,4 +31,4 @@
   tree = log --oneline --decorate --graph --abbrev-commit
   wip = "!f() { git add -A && git commit -m \"WIP\"; }; f"
   unwip = "!f() { git log -n 1 | grep -q -c \"WIP\" && git reset HEAD~1; }; f"
-  top = "!f() { git wip; git co master; git fp; git co $1; git rebase master; git unwip; }; f"
+  top = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git wip; git co master; git fp; git co $branch; git rebase master; git unwip; }; f"
