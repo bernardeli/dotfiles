@@ -16,7 +16,7 @@ colorscheme dracula
 set cursorline
 set cursorcolumn
 
-highlight LineNr ctermfg=234 ctermbg=black
+highlight LineNr ctermfg=236 ctermbg=black
 highlight CursorColumn ctermbg=234
 highlight CursorLine ctermbg=234
 
