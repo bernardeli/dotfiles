@@ -6,13 +6,17 @@ alias dmi="docker images"
 alias drun="docker run"
 alias doco="docker-compose"
 
-dclean() {
+ dclean() {
+  docker rm $(docker ps --filter "status=exited" -q)
+}
+
+dcleani() {
   docker rm $(docker ps -aq)
   docker rmi $(docker images | grep none | awk '{ print $3; }')
 }
 
 dbash() {
-  docker exec -t -i $1 /bin/bash
+  docker exec -it $1 /bin/bash
 }
 
 dstoprm() {
