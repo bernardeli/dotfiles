@@ -15,11 +15,17 @@ brew htop-osx
 brew hub
 brew imagemagick
 brew jq
+brew mysql
 brew nvm
+brew postgresql, service_restart: true
 brew rbenv
+brew redis, service_restart: true
 brew ruby-build
 brew sassc
+brew speedtest_cli
 brew terraform
+brew tldr
+brew unrar
 brew vim --override-system-vim
 brew wget
 brew zsh
@@ -34,6 +40,7 @@ cask firefox
 cask flux
 cask google-chrome
 cask iterm2
+cask numi
 cask skype
 cask slack
 cask spotify
