@@ -35,3 +35,4 @@
   top = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git wip; git co master; git fp; git co $branch; git rebase master; git unwip; }; f"
   pr = pull-request -o
   nuke-all-branches = "!f() { git branch | grep -v 'master' | xargs git branch -D; }; f"
+  cob = checkout -b
