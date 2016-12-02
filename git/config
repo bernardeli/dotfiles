@@ -15,10 +15,12 @@
   default = current
 [diff]
   compactionHeuristic = true
-
 [interactive]
   diffFilter = diff-highlight
 [pager]
   log = diff-highlight | less
   show = diff-highlight | less
   diff = diff-highlight | less
+[diff "ansible-vault"]
+  textconv = PAGER=cat ansible-vault view
+  cachetextconv = false
