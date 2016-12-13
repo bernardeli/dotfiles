@@ -37,3 +37,4 @@
   nuke-all-branches = "!f() { git branch | grep -v 'master' | xargs git branch -D; }; f"
   cob = checkout -b
   open = browse
+  cm = "!f() { git commit -m \"$*\"; }; f"
