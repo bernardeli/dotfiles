@@ -19,12 +19,25 @@ function np(){
   pur nexus-production "$@"
 }
 
+function plain-rails-console() {
+  pur $1-$2 bin/rails c
+}
+
 function rcp() {
-  pur nexus-production bin/rails c
+  project=${1:-nexus}
+  environment=production
+
+  if [[ "$project" == "supporter" ]]; then
+    environment="prod"
+  fi
+
+  plain-rails-console $project $environment
 }
 
 function rcs() {
-  pur nexus-staging bin/rails c
+  project=${1:-nexus}
+
+  plain-rails-console $project staging
 }
 
 function sadmin(){
@@ -39,6 +52,11 @@ function bk() {
   project=$1
   guessedProjectName=$(basename $(git remote show -n origin | grep Fetch | cut -d. -f2))
   project=${project:-$guessedProjectName}
+
+  if [[ "$project" == "supporter" ]]; then
+    project="supporter-tests"
+  fi
+
   branch=$2
   branch=${branch:-$(git rev-parse --abbrev-ref HEAD)}
   branch=${branch:-master}
