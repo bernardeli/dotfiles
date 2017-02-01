@@ -11,6 +11,7 @@ alias grpe='grep'
 alias gtix='gitx'
 alias gti='git'
 alias cl='highlight -O ansi'
+alias fork='open . -a /Applications/Fork.app'
 alias -g C='| wc -l'
 alias -g H='| head'
 alias -g L="| less"
