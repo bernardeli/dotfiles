@@ -13,6 +13,12 @@
 --ignore-dir=public/system
 --ignore-dir=.sass-cache
 --ignore-dir=vendor
+--ignore-dir=ui/public/admin
+--ignore-dir=api/public/admin
+--ignore-dir=public/admin
+--ignore-dir=ui/release/public
+--ignore-dir=release/public
+--ignore-dir=ui/dist
 
 --ignore-file=ext:bak
 --ignore-file=ext:htc
