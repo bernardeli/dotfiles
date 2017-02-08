@@ -19,6 +19,7 @@
 --ignore-dir=ui/release/public
 --ignore-dir=release/public
 --ignore-dir=ui/dist
+--ignore-dir=dist
 
 --ignore-file=ext:bak
 --ignore-file=ext:htc
