@@ -3,7 +3,7 @@ alias dst="docker stop"
 alias drm="docker rm"
 alias dps="docker ps -a"
 alias dmi="docker images"
-alias drun="docker run"
+alias drun="docker run --rm -it"
 alias doco="docker-compose"
 
  dclean() {
