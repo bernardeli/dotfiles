@@ -1,6 +1,5 @@
 " Misc
 Plugin 'danro/rename.vim'
-Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-endwise'
 Plugin 'vim-scripts/matchit.zip'
