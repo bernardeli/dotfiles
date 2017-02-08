@@ -12,4 +12,5 @@ let g:syntastic_warning_symbol='⚠'
 let g:syntastic_style_error_symbol = '✗'
 let g:syntastic_style_warning_symbol = '⚠'
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = '/Users/ric/.nvm/versions/node/v6.2.2/bin/eslint'
