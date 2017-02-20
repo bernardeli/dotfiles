@@ -2,6 +2,7 @@
   st = status
   s = status
   d = diff
+  ds = diff --staged
   c = commit -m
   ci = commit -am
   co = checkout
