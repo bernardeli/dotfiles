@@ -1,5 +1,12 @@
 Plugin 'tpope/vim-rails'
 
+let g:rails_projections = {
+  \ "app/lib/*.rb": {
+  \   "test": [
+  \     "spec/lib/{}_spec.rb"
+  \   ],
+  \ }}
+
 function! OpenGemfile()
   if filereadable("Gemfile")
     execute ":tabnew Gemfile"
