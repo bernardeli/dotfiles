@@ -17,6 +17,7 @@ set sidescroll=1
 
 set cf " Enable error files & error jumping.
 set clipboard+=unnamed " Yanks go on clipboard instead.
+let g:yankring_clipboard_monitor=0
 set history=256 " Number of things to remember in history.
 set autowrite " Writes on make/shell commands
 set ruler " Ruler on
