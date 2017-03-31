@@ -1,3 +1,5 @@
+tap 'caskroom/cask'
+
 brew ack
 brew ansible
 brew awscli
@@ -28,11 +30,13 @@ brew tldr
 brew unrar
 brew vim --override-system-vim
 brew wget
+brew yarn
+brew z
 brew zsh
 
 cask 1password
 cask caffeine
-cask clipmenu
+cask clipy
 cask cloak
 cask docker
 cask dropbox
@@ -40,6 +44,7 @@ cask firefox
 cask flux
 cask google-chrome
 cask iterm2
+cask macdown
 cask numi
 cask skype
 cask slack
