@@ -21,6 +21,8 @@
   log = diff-highlight | less
   show = diff-highlight | less
   diff = diff-highlight | less
+[status]
+  showUntrackedFiles = all
 [diff "ansible-vault"]
   textconv = PAGER=cat ansible-vault view
   cachetextconv = false
