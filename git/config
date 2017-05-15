@@ -23,6 +23,8 @@
   diff = diff-highlight | less
 [status]
   showUntrackedFiles = all
+[merge]
+  conflictstyle = diff3
 [diff "ansible-vault"]
   textconv = PAGER=cat ansible-vault view
   cachetextconv = false
