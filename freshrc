@@ -24,6 +24,8 @@ fresh zsh-users/zsh-completions src/_nvm --file=completion/_nvm
 fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
 fresh zsh-users/zsh-completions src/_rspec --file=completion/_rspec
 
+fresh rupa/z z.sh
+
 fresh shell/path.sh
 fresh shell/aliases/*
 
