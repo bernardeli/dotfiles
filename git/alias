@@ -29,6 +29,7 @@
   branch-master-regular = "!f() { git branch-master "$1-`date +%Y%m%d`"; }; f"
   latest-sha = log -n 1 --pretty=format:%H
   autofix = "!f() { git commit --fixup $(git latest-sha -- \"$GIT_PREFIX$1\") \"$GIT_PREFIX$1\"; }; f"
+  superfix = "!for file in $(git ls-files -m); do git autofix $file; done"
   bm = branch-master
   x = "!gitx"
   tree = log --oneline --decorate --graph --abbrev-commit
