@@ -1,6 +1,6 @@
 ########## Alias ##########
 
-alias uuid='uuidgen | tr "[:upper:]" "[:lower:]" | pbcopy'
+alias uuid='uuidgen | tr "[:upper:]" "[:lower:]" | tr -d "\n" | pbcopy'
 alias fastcop='git since-master | grep \\.rb$ | xargs ls 2>/dev/null | xargs rubocop --force-exclusion'
 alias psg="ps aux | grep -v grep | grep -i --color=auto $1"
 alias ll='ls -lGAh'
