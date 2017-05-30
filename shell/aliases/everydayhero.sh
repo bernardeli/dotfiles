@@ -57,6 +57,10 @@ function bk() {
     project="supporter-tests"
   fi
 
+  if [[ "$project" == "command_centre" ]]; then
+    project="command-centre"
+  fi
+
   branch=$2
   branch=${branch:-$(git rev-parse --abbrev-ref HEAD)}
   branch=${branch:-master}
