@@ -28,3 +28,5 @@
 [diff "ansible-vault"]
   textconv = PAGER=cat ansible-vault view
   cachetextconv = false
+[commit]
+  gpgsign = true
