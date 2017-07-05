@@ -2,42 +2,29 @@ e() { cd ~/Code/$1; }
 _e() { _files -W ~/Code -/; }
 compdef _e e
 
-ec() { cd ~/Code/payments/components/$1; }
-_ec() { _files -W ~/Code/payments/components -/; }
-compdef _ec ec
-
 ### plain utils aliases
-function pur(){
-  plain-utils run "$@"
-}
+function plain-console() {
+  project=$1
+  environment=$2
+  command="bin/rails c"
 
-function ns(){
-  pur nexus-staging "$@"
-}
-
-function np(){
-  pur nexus-production "$@"
-}
-
-function plain-rails-console() {
-  pur $1-$2 bin/rails c
-}
-
-function rcp() {
-  project=${1:-nexus}
-  environment=production
-
-  if [[ "$project" == "supporter" ]]; then
+  if [[ "$project" == "supporter" && "$environment" == "production" ]]; then
     environment="prod"
   fi
 
-  plain-rails-console $project $environment
+  if [[ "$project" == "mothership" ]]; then
+    command="exe/mothership"
+  fi
+
+  plain-utils run $project-$environment $command
+}
+
+function rcp() {
+  plain-console $1 $2 production
 }
 
 function rcs() {
-  project=${1:-nexus}
-
-  plain-rails-console $project staging
+  plain-console $1 $2 staging
 }
 
 function sadmin(){
