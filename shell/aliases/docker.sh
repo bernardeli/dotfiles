@@ -5,8 +5,9 @@ alias dps="docker ps -a"
 alias dmi="docker images"
 alias drun="docker run --rm -it"
 alias doco="docker-compose"
+alias dcr="docker-compose run --rm"
 
- dclean() {
+dclean() {
   docker rm $(docker ps --filter "status=exited" -q)
 }
 
