@@ -13,7 +13,7 @@
   ri = rebase -i
   cf = commit --fixup
   rim = rebase -i master --autosquash
-  amend = commit -a --amend --no-edit
+  amend = commit --amend --no-edit
   assume = update-index --assume-unchanged
   unassume = update-index --no-assume-unchanged
   assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
