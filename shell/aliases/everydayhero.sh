@@ -44,6 +44,10 @@ function bk() {
     project="supporter-tests"
   fi
 
+  if [[ "$project" == "zuul" ]]; then
+    project="zuul-tests"
+  fi
+
   if [[ "$project" == "command_centre" ]]; then
     project="command-centre"
   fi
