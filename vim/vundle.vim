@@ -16,3 +16,6 @@ Plugin 'pearofducks/ansible-vim'
 " Git integration
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+
+" Cucumber
+Plugin 'tpope/vim-cucumber'
