@@ -20,7 +20,6 @@ fresh robbyrussell/oh-my-zsh themes/robbyrussell.zsh-theme
 
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 fresh zsh-users/zsh-completions src/_gist --file=completion/_gist
-fresh zsh-users/zsh-completions src/_nvm --file=completion/_nvm
 fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
 fresh zsh-users/zsh-completions src/_rspec --file=completion/_rspec
 
