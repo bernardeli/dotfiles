@@ -42,3 +42,4 @@
   cob = checkout -b
   open = browse
   cm = "!f() { git commit -m \"$*\"; }; f"
+  ls = ls-files
