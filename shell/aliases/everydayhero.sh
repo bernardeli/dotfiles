@@ -1,3 +1,5 @@
+export CONVOX_WAIT=true
+
 e() { cd ~/Code/$1; }
 _e() { _files -W ~/Code -/; }
 compdef _e e
