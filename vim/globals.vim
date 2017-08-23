@@ -84,3 +84,6 @@ set hidden
 
 " Dont create new buffers
 set switchbuf=useopen
+
+" Search for visual selected text
+vnoremap # y/<C-R>"<CR>
