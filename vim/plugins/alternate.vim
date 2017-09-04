@@ -1,7 +1,7 @@
 " brew install uptech/oss/alt
 
 function! AltCommand(path, vim_command)
-  let l:alternate = system("alt " . a:path)
+  let l:alternate = system("find . -path ./_site -prune -or -path ./target -prune -or -path ./.DS_Store -prune -or -path ./_build -prune -or -path ./build -prune -or -path tags -prune -or -path ./tmp -prune -or -path ./log -prune -or -path ./.git -prune -or -type f -print | alt -f - " . a:path)
   if empty(l:alternate)
     echo "No alternate file for " . a:path . " exists!"
   else
