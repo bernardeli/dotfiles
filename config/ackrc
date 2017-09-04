@@ -20,6 +20,7 @@
 --ignore-dir=release/public
 --ignore-dir=ui/dist
 --ignore-dir=dist
+--ignore-dir=deps
 
 --ignore-file=ext:bak
 --ignore-file=ext:htc
