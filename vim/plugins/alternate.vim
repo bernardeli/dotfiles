@@ -11,3 +11,6 @@ endfunction
 
 " Find the alternate file for the current path and open it
 nnoremap <leader>av <cr>:call AltCommand(expand('%'), ':vs')<cr>
+
+" Find the alternate file for the current path and open it
+nnoremap <leader>as <cr>:call AltCommand(expand('%'), ':sp')<cr>
