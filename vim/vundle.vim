@@ -19,3 +19,5 @@ Plugin 'airblade/vim-gitgutter'
 
 " Cucumber
 Plugin 'tpope/vim-cucumber'
+
+Plugin 'tpope/vim-surround'
