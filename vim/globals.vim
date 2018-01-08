@@ -77,7 +77,9 @@ nmap N Nzz
 nmap <Tab> gt
 nmap <S-Tab> gT
 
+"Disable visualbell
 set visualbell
+set t_vb=
 
 " Jump between ctags and don't lose buffer history
 set hidden
