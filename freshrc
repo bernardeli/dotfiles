@@ -46,7 +46,6 @@ fresh-options --file
   fresh config/ctags
   fresh config/gemrc
   fresh config/irbrc
-  fresh config/npmrc
   fresh config/rspec
 fresh-options
 
