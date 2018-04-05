@@ -53,6 +53,7 @@ fresh-options
 # Misc
 fresh-options --bin
   fresh jasoncodes/dotfiles bin/loop
+  fresh git/git contrib/diff-highlight/diff-highlight
   fresh JonathonMA/dotfiles bin/timestash.sh
 fresh-options
 
