@@ -57,8 +57,6 @@ fresh-options --bin
   fresh JonathonMA/dotfiles bin/timestash.sh
 fresh-options
 
-fresh sivel/speedtest-cli speedtest_cli.py --bin=~/bin/speedtest
-
 fresh bernardeli/.osx .osx --file --ref=ric
 
 ### Vim
