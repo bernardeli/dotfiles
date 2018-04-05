@@ -30,5 +30,3 @@
   cachetextconv = false
 [commit]
   gpgsign = true
-[credential]
-  helper = !/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/bin/java -Ddebug=false -Djava.net.useSystemProxies=true --add-modules java.xml.bind -jar /usr/local/Cellar/git-credential-manager/2.0.3/libexec/git-credential-manager-2.0.3.jar
