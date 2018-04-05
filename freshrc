@@ -49,8 +49,6 @@ fresh-options --file
   fresh config/rspec
 fresh-options
 
-fresh 'bin/*' --bin
-
 # Misc
 fresh-options --bin
   fresh jasoncodes/dotfiles bin/loop
