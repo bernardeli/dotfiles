@@ -11,6 +11,7 @@ fresh robbyrussell/oh-my-zsh plugins/compleat/compleat.plugin.zsh
 fresh robbyrussell/oh-my-zsh lib/completion.zsh
 fresh robbyrussell/oh-my-zsh lib/directories.zsh
 fresh robbyrussell/oh-my-zsh lib/git.zsh
+fresh robbyrussell/oh-my-zsh lib/functions.zsh
 fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
 fresh robbyrussell/oh-my-zsh lib/misc.zsh
 fresh robbyrussell/oh-my-zsh lib/grep.zsh
