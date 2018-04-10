@@ -15,8 +15,6 @@
   default = current
 [diff]
   compactionHeuristic = true
-[interactive]
-  diffFilter = 'diff-so-fancy --patch-mode'
 [pager]
   log = diff-so-fancy | less
   show = diff-so-fancy | less
