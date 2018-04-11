@@ -26,7 +26,6 @@ brew ruby-build
 brew sassc
 brew speedtest_cli
 brew terraform
-brew tldr
 brew unrar
 brew vim --override-system-vim
 brew wget
@@ -37,11 +36,9 @@ brew zsh
 cask 1password
 cask caffeine
 cask clipy
-cask cloak
 cask docker
 cask dropbox
 cask firefox
-cask flux
 cask google-chrome
 cask iterm2
 cask macdown
@@ -50,5 +47,6 @@ cask skype
 cask slack
 cask spotify
 cask tunnelbear
+cask hammerspoon
 
 mas divvy
