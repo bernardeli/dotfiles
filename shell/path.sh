@@ -18,3 +18,13 @@ export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs"
 
 unset prepend_path
 unset append_path
+
+nix_shell_status () {
+  if [ ! -z $IN_NIX_SHELL ]; then
+    printf " [nix]"
+  else
+    printf ""
+  fi
+}
+
+export PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%}$(nix_shell_status) $(git_prompt_info)'
