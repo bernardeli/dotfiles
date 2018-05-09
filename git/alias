@@ -43,3 +43,4 @@
   open = browse
   cm = "!f() { git commit -m \"$*\"; }; f"
   ls = ls-files
+  df = "!f() { git diff $(git ls-files -m | fzf); }; f"
