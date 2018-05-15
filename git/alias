@@ -44,3 +44,4 @@
   cm = "!f() { git commit -m \"$*\"; }; f"
   ls = ls-files
   df = "!f() { git diff $(git ls-files -m | fzf); }; f"
+  lsc = diff-tree --no-commit-id --name-only -r
