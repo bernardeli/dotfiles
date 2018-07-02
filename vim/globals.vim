@@ -89,3 +89,6 @@ set switchbuf=useopen
 
 " Search for visual selected text
 vnoremap # y/<C-R>"<CR>
+
+" saving that shift press
+map ; :
