@@ -80,5 +80,3 @@ fresh-options --file=~/.vimrc --marker=\"
 
   fresh vim/vundle_after.vim
 fresh-options
-
-fresh jasoncodes/dotfiles hammerspoon/\*.lua --file=~/.hammerspoon/init.lua
