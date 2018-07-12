@@ -50,6 +50,8 @@ fresh-options --file
   fresh config/rspec
 fresh-options
 
+fresh config/bundle --file=~/.bundle/config
+
 # Misc
 fresh-options --bin
   fresh jasoncodes/dotfiles bin/loop
