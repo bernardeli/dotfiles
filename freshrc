@@ -1,67 +1,43 @@
-fresh JonathonMA/fresh bin/fresh --bin
-fresh freshshell/fresh contrib/source-build.sh --file=~/.zshrc
+fresh freshshell/fresh bin/fresh --bin
+
+fresh zshrc --file
 
 # Shell
-fresh shell/zsh/completion/init
-fresh shell/zsh/options
-fresh jamesottaway/dotfiles lib/zsh-completion-fpath
-
-fresh robbyrussell/oh-my-zsh plugins/git/git.plugin.zsh
-fresh robbyrussell/oh-my-zsh plugins/compleat/compleat.plugin.zsh
 fresh robbyrussell/oh-my-zsh lib/completion.zsh
-fresh robbyrussell/oh-my-zsh lib/directories.zsh
-fresh robbyrussell/oh-my-zsh lib/git.zsh
-fresh robbyrussell/oh-my-zsh lib/functions.zsh
 fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
-fresh robbyrussell/oh-my-zsh lib/misc.zsh
-fresh robbyrussell/oh-my-zsh lib/grep.zsh
 fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
 fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
 fresh robbyrussell/oh-my-zsh themes/robbyrussell.zsh-theme
 
-fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 fresh zsh-users/zsh-completions src/_gist --file=completion/_gist
 fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
 fresh zsh-users/zsh-completions src/_rspec --file=completion/_rspec
 
-fresh rupa/z z.sh
-
+fresh shell/zsh/completion/init
+fresh shell/zsh/options
 fresh shell/path.sh
 fresh shell/aliases/*
 
 # Git
+fresh config/gitconfig --file
+
+fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy --bin
+
 fresh-options --file=~/.gitignore --marker
   fresh github/gitignore Global/Vim.gitignore
   fresh github/gitignore Global/macOS.gitignore
   fresh github/gitignore Global/Tags.gitignore
 fresh-options
 
-fresh-options --file=~/.gitconfig --marker
-  fresh git/config
-  fresh git/alias
-fresh-options
-
 # General config files
-fresh-options --file
-  fresh config/ackrc
-  fresh config/ctags
-  fresh config/gemrc
-  fresh config/irbrc
-  fresh config/rspec
-fresh-options
-
+fresh config/ackrc --file
+fresh config/ctags --file
+fresh config/gemrc --file
+fresh config/irbrc --file
+fresh config/rspec --file
 fresh config/bundle --file=~/.bundle/config
 
-# Misc
-fresh-options --bin
-  fresh jasoncodes/dotfiles bin/loop
-  fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy
-  fresh JonathonMA/dotfiles bin/timestash.sh
-fresh-options
-
-fresh bernardeli/.osx .osx --file --ref=ric
-
-### Vim
+# Vim
 fresh-options --file=~/.vimrc --marker=\"
   fresh vim/vundle_before.vim
 
