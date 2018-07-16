@@ -20,4 +20,6 @@ cab Tabnew tabnew
 cab REname Rename
 cab Renaem Rename
 cab REnaem Rename
+cab gblame Gblame
+cab GBlame Gblame
 ab bp require 'pry'; binding.pry
