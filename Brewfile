@@ -1,10 +1,13 @@
 brew ack
+brew alt
+brew bash
 brew curl
 brew gist
 brew git
 brew htop-osx
 brew hub
 brew jq
+brew rbenv
 brew speedtest_cli
 brew vim --override-system-vim
 brew wget
