@@ -1,41 +1,39 @@
 fresh freshshell/fresh bin/fresh --bin
 
-fresh zshrc --file
+fresh zsh/options.zsh
+fresh zsh/completion.zsh
+fresh zsh/key-bindings.zsh
+fresh zsh/spectrum.zsh
+fresh zsh/theme-and-appearance.zsh
+fresh zsh/robbyrussell.zsh-theme
+fresh zsh/_gist --file=completion/_gist
+fresh zsh/_rails --file=completion/_rails
+fresh zsh/_rspec --file=completion/_rspec
+fresh zsh/_hub --file=completion/_hub
 
-# Shell
-fresh robbyrussell/oh-my-zsh lib/completion.zsh
-fresh robbyrussell/oh-my-zsh lib/key-bindings.zsh
-fresh robbyrussell/oh-my-zsh lib/spectrum.zsh
-fresh robbyrussell/oh-my-zsh lib/theme-and-appearance.zsh
-fresh robbyrussell/oh-my-zsh themes/robbyrussell.zsh-theme
-
-fresh zsh-users/zsh-completions src/_gist --file=completion/_gist
-fresh zsh-users/zsh-completions src/_rails --file=completion/_rails
-fresh zsh-users/zsh-completions src/_rspec --file=completion/_rspec
-
-fresh shell/zsh/completion/init
-fresh shell/zsh/options
+fresh shell/directories.sh
+fresh shell/docker.sh
+fresh shell/fzf.sh
+fresh shell/general.sh
+fresh shell/git.sh
+fresh shell/hub.sh
+fresh shell/nix.sh
 fresh shell/path.sh
-fresh shell/aliases/*
+fresh shell/prompt.sh
+fresh shell/rails.sh
+fresh shell/rbenv.sh
 
-# Git
+fresh zshrc --file
 fresh config/gitconfig --file
-
-fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy --bin
-
-fresh-options --file=~/.gitignore --marker
-  fresh github/gitignore Global/Vim.gitignore
-  fresh github/gitignore Global/macOS.gitignore
-  fresh github/gitignore Global/Tags.gitignore
-fresh-options
-
-# General config files
+fresh config/gitignore --file
 fresh config/ackrc --file
 fresh config/ctags --file
 fresh config/gemrc --file
 fresh config/irbrc --file
 fresh config/rspec --file
 fresh config/bundle --file=~/.bundle/config
+
+fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy --bin
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
@@ -50,9 +48,8 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/splits.vim
   fresh vim/cucumber_align_pipes.vim
   fresh vim/globals.vim
-
-  fresh jasoncodes/dotfiles vim/config/auto_mkdir.vim
-  fresh jasoncodes/dotfiles vim/config/undo.vim
+  fresh vim/auto_mkdir.vim
+  fresh vim/undo.vim
 
   fresh vim/vundle_after.vim
 fresh-options
