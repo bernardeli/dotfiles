@@ -1,4 +1,4 @@
-Plugin 'tpope/vim-rails'
+Plug 'tpope/vim-rails'
 
 let g:rails_projections = {
   \ "app/lib/*.rb": {
@@ -27,11 +27,3 @@ function! OpenSpecHelper()
   end
 endfunction
 map <Leader>s :call OpenSpecHelper()<CR>
-
-" Convert Ruby 1.8 to 1.9 Hash Syntax
-" http://robots.thoughtbot.com/convert-ruby-1-8-to-1-9-hash-syntax
-function ConvertRubyHashSyntax()
-  %s/:\([^ ]*\)\(\s*\)=>/\1:/g
-  ''
-:endfunction
-nnoremap <leader>h :call ConvertRubyHashSyntax()<cr>

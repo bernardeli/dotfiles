@@ -37,19 +37,28 @@ fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy --bin
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
-  fresh vim/vundle_before.vim
+  fresh vim/plug_init.vim
 
-  fresh vim/vundle.vim
-  fresh vim/plugins/*
-  fresh vim/auto_completion.vim
-  fresh vim/colours.vim
-  fresh vim/file_type_detection.vim
+  fresh vim/plugins.vim
+  fresh vim/plugins/ack.vim
+  fresh vim/plugins/ale.vim
+  fresh vim/plugins/buffergator.vim
+  fresh vim/plugins/colours.vim
+  fresh vim/plugins/ctrlp.vim
+  fresh vim/plugins/cucumber_align_pipes.vim
+  fresh vim/plugins/rails.vim
+  fresh vim/plugins/tcomment.vim
+  fresh vim/plugins/vim-airline.vim
+  fresh vim/plugins/vim-smooth-scroll.vim
+
+  fresh vim/plug_end.vim
+
   fresh vim/aliases.vim
-  fresh vim/splits.vim
-  fresh vim/cucumber_align_pipes.vim
-  fresh vim/globals.vim
+  fresh vim/alternate.vim
+  fresh vim/auto_completion.vim
   fresh vim/auto_mkdir.vim
+  fresh vim/file_type_detection.vim
+  fresh vim/globals.vim
+  fresh vim/splits.vim
   fresh vim/undo.vim
-
-  fresh vim/vundle_after.vim
 fresh-options
