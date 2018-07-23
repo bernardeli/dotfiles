@@ -22,6 +22,7 @@ fresh shell/nix.sh
 fresh shell/prompt.sh
 fresh shell/rails.sh
 fresh shell/rbenv.sh
+fresh shell/nvm.sh
 
 fresh zshrc --file
 fresh config/gitconfig --file
