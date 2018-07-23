@@ -1,13 +1,9 @@
 function prepend_path() {
-  if [ -d "$1" ]; then
-    PATH="$1:$PATH"
-  fi
+  PATH="$1:$PATH"
 }
 
 function append_path() {
-  if [ -d "$1" ]; then
-    PATH="$PATH:$1"
-  fi
+  PATH="$PATH:$1"
 }
 
 append_path "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"

@@ -11,6 +11,7 @@ fresh zsh/_rails --file=completion/_rails
 fresh zsh/_rspec --file=completion/_rspec
 fresh zsh/_hub --file=completion/_hub
 
+fresh shell/path.sh
 fresh shell/directories.sh
 fresh shell/docker.sh
 fresh shell/fzf.sh
@@ -18,7 +19,6 @@ fresh shell/general.sh
 fresh shell/git.sh
 fresh shell/hub.sh
 fresh shell/nix.sh
-fresh shell/path.sh
 fresh shell/prompt.sh
 fresh shell/rails.sh
 fresh shell/rbenv.sh
