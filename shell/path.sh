@@ -6,9 +6,9 @@ function append_path() {
   PATH="$PATH:$1"
 }
 
-append_path "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-append_path "/usr/local/opt/go/libexec/bin"
-append_path "/usr/local/opt/coreutils/libexec/gnubin"
+prepend_path "/usr/local/bin"
+# append_path "/usr/local/opt/go/libexec/bin"
+# append_path "/usr/local/opt/coreutils/libexec/gnubin"
 
 export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs"
 
