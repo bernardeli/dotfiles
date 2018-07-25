@@ -23,6 +23,8 @@
   showUntrackedFiles = all
 [merge]
   conflictstyle = diff3
+[commit]
+  gpgsign = true
 [diff "ansible-vault"]
   textconv = PAGER=cat ansible-vault view
   cachetextconv = false
