@@ -67,7 +67,7 @@
   wip = "!f() { git add -A && git commit -m \"WIP\"; }; f"
   unwip = "!f() { git log -n 1 | grep -q -c \"WIP\" && git reset HEAD~1; }; f"
   top = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git wip; git co master; git fp; git co $branch; git rebase master; git unwip; }; f"
-  pr = pull-request -o
+  open-pr = pull-request -o
   nuke-all-branches = "!f() { git branch | grep -v 'master' | xargs git branch -D; }; f"
   cob = checkout -b
   open = browse
