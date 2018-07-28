@@ -1,6 +1,12 @@
 zstyle :compinstall filename '~/.zshrc'
+
 autoload -Uz compinit
-compinit
+
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+
+compinit -C
 
 fpath=(~/.fresh/build/completion $fpath)
 
