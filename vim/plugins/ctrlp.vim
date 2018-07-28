@@ -1,5 +1,0 @@
-Plug 'ctrlpvim/ctrlp.vim'
-
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_working_path_mode = 'a'
-let g:ctrlp_custom_ignore = 'node_modules\|coverage\|DS_Store\|git|dist\|deps\|_build\|bin\/Debug'

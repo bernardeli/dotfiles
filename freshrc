@@ -46,7 +46,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/plugins/ale.vim
   fresh vim/plugins/buffergator.vim
   fresh vim/plugins/colours.vim
-  fresh vim/plugins/ctrlp.vim
+  fresh vim/plugins/fzf.vim
   fresh vim/plugins/cucumber_align_pipes.vim
   fresh vim/plugins/rails.vim
   fresh vim/plugins/tcomment.vim
