@@ -15,6 +15,7 @@ cab E e
 cab ag Rg
 cab Ag Rg
 cab ack Rg
+cab rg Rg
 cab TAbnew tabnew
 cab Tabnew tabnew
 cab REname Rename
