@@ -7,8 +7,10 @@ function append_path() {
 }
 
 prepend_path "/usr/local/bin"
-# append_path "/usr/local/opt/go/libexec/bin"
-# append_path "/usr/local/opt/coreutils/libexec/gnubin"
+
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
 
 export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs"
 
