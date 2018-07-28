@@ -1,4 +1,3 @@
-brew ack
 brew alt
 brew bash
 brew curl

@@ -12,9 +12,9 @@ cab Wqa wqa
 cab WQa wqa
 cab WQA wqa
 cab E e
-cab ag Ack
-cab Ag Ack
-cab ack Ack
+cab ag Rg
+cab Ag Rg
+cab ack Rg
 cab TAbnew tabnew
 cab Tabnew tabnew
 cab REname Rename
