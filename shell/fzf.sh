@@ -9,9 +9,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 fgst() {
   eval "command git status -s" | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse $FZF_DEFAULT_OPTS $FZF_CTRL_T_OPTS" fzf -m "$@" | while read -r item; do
-    printf "$item" | cut -c4-
+    printf "$item" | cut -c3-
   done
-  echo
 }
 
 fvim() {
