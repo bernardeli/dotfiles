@@ -25,6 +25,7 @@ fresh shell/rails.sh
 # fresh shell/nvm.sh
 fresh shell/direnv.sh
 fresh shell/gpg.sh
+fresh shell/buildkite.sh
 
 fresh zshrc --file
 fresh config/gitconfig --file
