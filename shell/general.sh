@@ -19,7 +19,7 @@ alias -g C='| wc -l'
 alias -g H='| head'
 alias -g L="| less"
 alias -g S='| sort'
-alias -g G='| grep' # now you can do: ls foo G something
+alias -g G='| rg' # now you can do: ls foo G something
 
 export CUCUMBER_FORMAT=progress
 
