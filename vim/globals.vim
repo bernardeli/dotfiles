@@ -92,3 +92,7 @@ vnoremap # y/<C-R>"<CR>
 
 " saving that shift press
 map ; :
+
+" Uses old regex engine
+" https://stackoverflow.com/a/16920294
+set regexpengine=1
