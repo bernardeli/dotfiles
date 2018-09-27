@@ -20,5 +20,5 @@ fvim() {
 }
 
 fvg() {
-  vim $(fgst)
+  vim -p $(fgst)
 }
