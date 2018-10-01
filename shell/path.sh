@@ -13,6 +13,7 @@ if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
 fi
 
 export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs"
+source $HOME/.nix-profile/etc/profile.d/nix.sh
 
 unset prepend_path
 unset append_path
