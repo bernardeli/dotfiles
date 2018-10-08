@@ -20,7 +20,6 @@ fresh shell/git.sh
 fresh shell/hub.sh
 fresh shell/prompt.sh
 fresh shell/rails.sh
-# fresh shell/rbenv.sh
 # fresh shell/nvm.sh
 fresh shell/direnv.sh
 fresh shell/gpg.sh
