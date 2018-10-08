@@ -28,3 +28,11 @@ alias reload=". ~/.zshrc"
 c() { cd "$HOME/Code/$1" || return; }
 _c() { _files -W ~/Code -/; }
 compdef _c c
+
+alias nx="nix-shell --command zsh"
+alias nxp="nix-shell --command zsh -p"
+
+fgf() {
+  cd ~/Code/fivegoodfriends
+  nx
+}

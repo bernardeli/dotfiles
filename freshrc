@@ -18,7 +18,6 @@ fresh shell/fzf.sh
 fresh shell/general.sh
 fresh shell/git.sh
 fresh shell/hub.sh
-fresh shell/nix.sh
 fresh shell/prompt.sh
 fresh shell/rails.sh
 # fresh shell/rbenv.sh
