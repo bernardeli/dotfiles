@@ -34,5 +34,10 @@ alias nxp="nix-shell --command zsh -p"
 
 fgf() {
   cd ~/Code/fivegoodfriends
-  nx
+
+  if [ ! -z $IN_NIX_SHELL ]; then
+    echo
+  else
+    nx
+  fi
 }
