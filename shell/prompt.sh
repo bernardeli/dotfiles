@@ -7,6 +7,6 @@ nix_shell_status () {
 }
 
 # Run spectrum_ls to see all colours
-export PROMPT='${ret_status} %{$fg[cyan]%}%c%{$FG[023]%}$(nix_shell_status)%{$reset_color%} $(git_prompt_info)'
+export PROMPT='${ret_status} %{$fg[cyan]%}%c%{$FG[023]%}$(nix_shell_status)%(1j.%{$FG[030]%} jobs:(%j).)%{$reset_color%} $(git_prompt_info)'
 
 unset nix_shell_status
