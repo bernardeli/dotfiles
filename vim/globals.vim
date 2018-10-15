@@ -95,6 +95,7 @@ map ; :
 
 " saving that shift press, again.
 map 8 *
+map 3 *
 
 " Uses old regex engine
 " https://stackoverflow.com/a/16920294
