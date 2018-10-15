@@ -96,3 +96,6 @@ map ; :
 " Uses old regex engine
 " https://stackoverflow.com/a/16920294
 set regexpengine=1
+
+" Git - Always turn on spell check
+autocmd FileType gitcommit setlocal spell
