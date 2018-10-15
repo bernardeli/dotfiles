@@ -49,7 +49,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh vim/plugins/tcomment.vim
   fresh vim/plugins/vim-airline.vim
   fresh vim/plugins/vim-test.vim
-  fresh vim/plugins/argwrap.vim
+  fresh vim/plugins/splitjoin.vim
 
   fresh vim/plug_end.vim
 
