@@ -6,6 +6,7 @@ let g:ale_set_highlights = 0
 
 let g:ale_fixers = {
 \  'typescript': ['prettier'],
+\  'javascript': ['eslint', 'prettier'],
 \  'ruby': ['rubocop'],
 \ }
 
