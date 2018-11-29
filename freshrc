@@ -23,6 +23,7 @@ fresh shell/rails.sh
 fresh shell/direnv.sh
 fresh shell/gpg.sh
 fresh shell/buildkite.sh
+fresh shell/rununtilfail.sh
 
 fresh zshrc --file
 fresh config/gitconfig --file
