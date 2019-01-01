@@ -6,6 +6,7 @@ fresh zsh/key-bindings.zsh
 fresh zsh/spectrum.zsh
 fresh zsh/theme-and-appearance.zsh
 fresh zsh/robbyrussell.zsh-theme
+fresh zsh/forgit.zsh
 fresh zsh/_gist --file=completion/_gist
 fresh zsh/_rails --file=completion/_rails
 fresh zsh/_rspec --file=completion/_rspec
