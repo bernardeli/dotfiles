@@ -32,6 +32,7 @@ fresh config/gitignore --file
 fresh config/ctags --file
 fresh config/gemrc --file
 fresh config/irbrc --file
+fresh config/pryrc --file
 fresh config/rspec --file
 fresh config/bundle --file=~/.bundle/config
 

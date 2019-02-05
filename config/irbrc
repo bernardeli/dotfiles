@@ -4,13 +4,15 @@ IRB.conf[:AUTO_INDENT] = true
 
 class Array
   def self.toy(n = 10, &block)
-    block_given? ? Array.new(n,&block) : Array.new(n) {|i| i+1}
+    block_given? ? Array.new(n, &block) : Array.new(n) { |i| i + 1 }
   end
 end
 
 class Hash
   def self.toy(n = 10)
-    Hash[Array.toy(n).zip(Array.toy(n){|c| (96+(c+1)).chr})]
+    Hash[
+      Array.toy(n).zip(Array.toy(n) { |c| (96 + (c + 1)).chr }),
+    ]
   end
 end
 
@@ -23,14 +25,14 @@ def log_queries_please!
   ActiveRecord::Base.connection.instance_variable_set :@logger, Logger.new(STDOUT)
 end
 
-def go_resque
-  if defined?(Resque)
-    Resque::Worker.new("*").work(10)
-  end
-end
-
 class Numeric
   def percent_of(n)
     self.to_f / n.to_f * 100.0
+  end
+end
+
+class Object
+  def local_methods(obj = self)
+    (obj.methods - obj.class.superclass.instance_methods).sort
   end
 end
