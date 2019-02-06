@@ -22,3 +22,11 @@ fvim() {
 fvg() {
   vim -p $(fgst)
 }
+
+frg() {
+  files=$(git status -s | rg spec | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse $FZF_DEFAULT_OPTS $FZF_CTRL_T_OPTS" fzf -m "$@" | cut -c3- | tr -s " ")
+
+  echo $files
+
+  rspec $(printf $files | paste -s -d " ")
+}
