@@ -6,3 +6,5 @@ let g:rails_projections = {
   \     "spec/lib/{}_spec.rb"
   \   ],
   \ }}
+
+set path+=app/mounts/**,frontend/components/**
