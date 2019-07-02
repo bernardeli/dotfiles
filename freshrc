@@ -25,6 +25,7 @@ fresh shell/direnv.sh
 fresh shell/gpg.sh
 fresh shell/buildkite.sh
 fresh shell/rununtilfail.sh
+fresh shell/cheat.sh
 
 fresh zshrc --file
 fresh config/gitconfig --file
