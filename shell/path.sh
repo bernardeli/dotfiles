@@ -7,6 +7,7 @@ function append_path() {
 }
 
 prepend_path "/usr/local/bin"
+prepend_path "/usr/local/opt/python/libexec/bin"
 
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
