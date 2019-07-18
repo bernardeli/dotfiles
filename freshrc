@@ -38,6 +38,7 @@ fresh config/pryrc --file
 fresh config/rspec --file
 fresh config/bundle --file=~/.bundle/config
 fresh shell/ssh-linode-roulette --bin
+fresh shell/ssh-linode --bin
 
 fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy --bin
 

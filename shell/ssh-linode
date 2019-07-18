@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+label=$1
+
+ip=`curl -s -H "Authorization: Bearer $LINODE_AUTH_TOKEN" \
+  https://api.linode.com/v4/linode/instances \
+  | jq ".data[] | select(.label==\"$label\") | .ipv4[0]" \
+  | sort -R \
+  | head -n1 \
+  | tr -d '"'`
+
+ssh ricardo@$ip
