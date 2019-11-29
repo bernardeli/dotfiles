@@ -27,6 +27,7 @@ fresh shell/buildkite.sh
 fresh shell/rununtilfail.sh
 fresh shell/cheat.sh
 fresh shell/secrets.sh
+fresh shell/asdf.sh
 
 fresh zshrc --file
 fresh config/gitconfig --file
@@ -36,6 +37,7 @@ fresh config/gemrc --file
 fresh config/irbrc --file
 fresh config/pryrc --file
 fresh config/rspec --file
+fresh config/asdfrc --file
 fresh config/bundle --file=~/.bundle/config
 fresh shell/ssh-linode-roulette --bin
 fresh shell/ssh-linode --bin
