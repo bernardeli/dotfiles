@@ -23,6 +23,6 @@ cab Renaem Rename
 cab REnaem Rename
 cab gblame Gblame
 cab GBlame Gblame
-ab bp require 'pry'; binding.pry
+ab bp binding.pry
 ab sos save_and_open_screenshot <esc>
 ab sop save_and_open_page <esc>
