@@ -3,3 +3,9 @@ class Object
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
 end
+
+def tenantify!
+  ActsAsTenant.current_tenant = Company.first
+end
+
+tenantify!
