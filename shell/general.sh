@@ -29,6 +29,15 @@ c() { cd "$HOME/Code/$1" || return; }
 _c() { _files -W ~/Code -/; }
 compdef _c c
 
+alias nx="nix-shell --command zsh"
+alias nxp="nix-shell --command zsh -p"
+
 fgf() {
   cd ~/Code/fivegoodfriends
+
+  if [ ! -z $IN_NIX_SHELL ]; then
+    echo
+  else
+    nx
+  fi
 }
