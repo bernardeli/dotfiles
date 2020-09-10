@@ -1,6 +1,5 @@
 Plug 'airblade/vim-gitgutter'
 Plug 'danro/rename.vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-cucumber'
