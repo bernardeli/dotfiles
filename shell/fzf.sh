@@ -13,12 +13,6 @@ fgst() {
   done
 }
 
-fvim() {
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && vim "${files[@]}"
-}
-
 fvg() {
   vim -p $(fgst)
 }
@@ -47,4 +41,14 @@ fshow() {
                 xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
                 {}
 FZF-EOF"
+}
+
+fuzzyrg() {
+  eval "command rg -l '$*'" | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse $FZF_DEFAULT_OPTS $FZF_CTRL_T_OPTS" fzf -m | while read -r item; do
+    printf "$item\n"
+  done
+}
+
+fv() {
+  vim -p $(fuzzyrg $*)
 }
