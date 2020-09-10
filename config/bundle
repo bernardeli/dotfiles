@@ -1,3 +1,2 @@
 ---
 BUNDLE_JOBS: "8"
-BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries=true --with-xml2-include=/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include/libxml2"
