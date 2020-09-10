@@ -13,6 +13,7 @@ fresh zsh/_rspec --file=completion/_rspec
 fresh zsh/_hub --file=completion/_hub
 
 fresh shell/path.sh
+fresh shell/nix.sh
 fresh shell/directories.sh
 fresh shell/docker.sh
 fresh shell/fzf.sh
