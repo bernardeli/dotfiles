@@ -1,4 +1,1 @@
-use nix
-
-export PGHOST=localhost
-export PGPASSWORD=password
+# Empty
