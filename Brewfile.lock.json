@@ -1,0 +1,130 @@
+{
+  "entries": {
+    "cask": {
+      "1password": {
+        "version": "7.8.5",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "authy": {
+        "version": "1.8.3",
+        "options": {
+          "full_name": "authy"
+        }
+      },
+      "dropbox": {
+        "version": "123.4.4832",
+        "options": {
+          "full_name": "dropbox"
+        }
+      },
+      "google-chrome": {
+        "version": "91.0.4472.77",
+        "options": {
+          "full_name": "google-chrome"
+        }
+      },
+      "gpg-suite": {
+        "version": "2021.1,105",
+        "options": {
+          "full_name": "gpg-suite"
+        }
+      },
+      "iterm2": {
+        "version": "3.4.8",
+        "options": {
+          "full_name": "iterm2"
+        }
+      },
+      "numi": {
+        "version": "3.30.692",
+        "options": {
+          "full_name": "numi"
+        }
+      },
+      "skitch": {
+        "version": "2.9,265157",
+        "options": {
+          "full_name": "skitch"
+        }
+      },
+      "slack": {
+        "version": "4.17.0",
+        "options": {
+          "full_name": "slack"
+        }
+      },
+      "spotify": {
+        "version": "1.1.60.672.g6ad9c215,1.1.60.672.g6ad9c215-15",
+        "options": {
+          "full_name": "spotify"
+        }
+      },
+      "whatsapp": {
+        "version": "2.2121.5",
+        "options": {
+          "full_name": "whatsapp"
+        }
+      },
+      "basecamp": {
+        "version": "3",
+        "options": {
+          "full_name": "basecamp"
+        }
+      },
+      "firefox": {
+        "version": "89.0",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "hey": {
+        "version": "1.2.0",
+        "options": {
+          "full_name": "hey"
+        }
+      },
+      "nordvpn": {
+        "version": "6.4.2,164",
+        "options": {
+          "full_name": "nordvpn"
+        }
+      },
+      "tuple": {
+        "version": "0.86.2-2021-05-20-ab8f4799",
+        "options": {
+          "full_name": "tuple"
+        }
+      },
+      "zoom": {
+        "version": "5.6.6.950",
+        "options": {
+          "full_name": "zoom"
+        }
+      },
+      "lunar": {
+        "version": "4.0.5",
+        "options": {
+          "full_name": "lunar"
+        }
+      }
+    },
+    "mas": {
+      "divvy": null,
+      "xcode": null
+    }
+  },
+  "system": {
+    "macos": {
+      "big_sur": {
+        "HOMEBREW_VERSION": "3.1.10",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "d8e46f52415c6b626168e947b8864c9693fc2461",
+        "CLT": "12.5.0.0.1.1617976050",
+        "Xcode": "12.5",
+        "macOS": "11.4"
+      }
+    }
+  }
+}
