@@ -35,3 +35,5 @@ alias nxp="nix-shell --command zsh -p"
 fgf() {
   cd ~/Code/fivegoodfriends
 }
+
+export DISABLE_SPRING=true
