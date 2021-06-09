@@ -23,6 +23,8 @@ alias -g G='| rg' # now you can do: ls foo G something
 
 export CUCUMBER_FORMAT=progress
 
+export NIX_PG_VERSION=13
+
 alias reload=". ~/.zshrc"
 
 c() { cd "$HOME/Code/$1" || return; }
