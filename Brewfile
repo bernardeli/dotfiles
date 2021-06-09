@@ -17,5 +17,8 @@ cask "tuple"
 cask "whatsapp"
 cask "zoom"
 
+tap "uptech/homebrew-oss"
+brew "uptech/oss/alt"
+
 mas "divvy", id: 413857545
 mas "xcode", id: 497799835

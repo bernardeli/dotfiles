@@ -62,7 +62,7 @@
         }
       },
       "whatsapp": {
-        "version": "2.2121.5",
+        "version": "2.2121.6",
         "options": {
           "full_name": "whatsapp"
         }
@@ -98,7 +98,7 @@
         }
       },
       "zoom": {
-        "version": "5.6.6.950",
+        "version": "5.6.7.1020",
         "options": {
           "full_name": "zoom"
         }
@@ -113,14 +113,40 @@
     "mas": {
       "divvy": null,
       "xcode": null
+    },
+    "tap": {
+      "uptech/oss": {
+        "revision": "d72e66fae225a682f95145e9d7a28503e76cfb67"
+      }
+    },
+    "brew": {
+      "uptech/oss/alt": {
+        "version": "3.4.0",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://github.com/uptech/homebrew-oss/raw/master/Formula",
+          "files": {
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://github.com/uptech/homebrew-oss/raw/master/Formula/alt-3.4.0.catalina.bottle.tar.gz",
+              "sha256": "60fea07c7562f910b0376c661517642f99cbdc8e430231d375c348c09613c3e9"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://github.com/uptech/homebrew-oss/raw/master/Formula/alt-3.4.0.big_sur.bottle.tar.gz",
+              "sha256": "60fea07c7562f910b0376c661517642f99cbdc8e430231d375c348c09613c3e9"
+            }
+          }
+        }
+      }
     }
   },
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.10",
+        "HOMEBREW_VERSION": "3.1.11",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "d8e46f52415c6b626168e947b8864c9693fc2461",
+        "Homebrew/homebrew-core": "fa06befe7fff7b2cada1f85aef3161acee6ab4dc",
         "CLT": "12.5.0.0.1.1617976050",
         "Xcode": "12.5",
         "macOS": "11.4"
