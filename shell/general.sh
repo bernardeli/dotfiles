@@ -14,6 +14,7 @@ alias ag='rg'
 alias ack='rg'
 alias ism='iex -S mix'
 alias path='echo -e ${PATH//:/\\n}'
+alias gitx='fork'
 
 alias -g C='| wc -l'
 alias -g H='| head'

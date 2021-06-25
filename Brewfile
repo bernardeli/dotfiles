@@ -16,6 +16,7 @@ cask "spotify"
 cask "tuple"
 cask "whatsapp"
 cask "zoom"
+cask "fork"
 
 tap "uptech/homebrew-oss"
 brew "uptech/oss/alt"

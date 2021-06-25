@@ -20,7 +20,7 @@
         }
       },
       "google-chrome": {
-        "version": "91.0.4472.77",
+        "version": "91.0.4472.101",
         "options": {
           "full_name": "google-chrome"
         }
@@ -108,6 +108,18 @@
         "options": {
           "full_name": "lunar"
         }
+      },
+      "sourcetree": {
+        "version": "4.1.2,238",
+        "options": {
+          "full_name": "sourcetree"
+        }
+      },
+      "fork": {
+        "version": "2.8",
+        "options": {
+          "full_name": "fork"
+        }
       }
     },
     "mas": {
@@ -146,7 +158,7 @@
       "big_sur": {
         "HOMEBREW_VERSION": "3.1.11",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "fa06befe7fff7b2cada1f85aef3161acee6ab4dc",
+        "Homebrew/homebrew-core": "4306b4e427dd0dc12b2cd47f3f5116d58df00d3f",
         "CLT": "12.5.0.0.1.1617976050",
         "Xcode": "12.5",
         "macOS": "11.4"
