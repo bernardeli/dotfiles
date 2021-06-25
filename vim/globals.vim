@@ -93,9 +93,10 @@ vnoremap # y/<C-R>"<CR>
 " saving that shift press
 map ; :
 
-" Uses old regex engine
-" https://stackoverflow.com/a/16920294
-set regexpengine=1
+" Let vim decide which regexpengine it's going to use
+" 1 is faster for ruby, 2 is faster for typescript
+" 0 means automatic decide
+set regexpengine=0
 
 " Git - Always turn on spell check
 autocmd FileType gitcommit setlocal spell
