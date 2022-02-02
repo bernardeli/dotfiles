@@ -1,4 +1,5 @@
 call plug#end()
 
 " Must come after plug#end
-colorscheme solarized
+" colorscheme solarized
+colorscheme dracula
