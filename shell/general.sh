@@ -24,7 +24,7 @@ alias -g G='| rg' # now you can do: ls foo G something
 
 export CUCUMBER_FORMAT=progress
 
-export NIX_PG_VERSION=13
+# export NIX_PG_VERSION=13
 
 alias reload=". ~/.zshrc"
 
@@ -36,7 +36,7 @@ alias nx="nix-shell --command zsh"
 alias nxp="nix-shell --command zsh -p"
 
 fgf() {
-  cd ~/Code/fivegoodfriends
+  cd ~/Code/lookout
 }
 
 export DISABLE_SPRING=true
