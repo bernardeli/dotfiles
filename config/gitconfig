@@ -42,7 +42,7 @@
   bd = branch -D
   ri = rebase -i
   cf = commit --fixup
-  rim = rebase -i master --autosquash
+  rim = rebase -i main --autosquash
   amend = commit --amend --no-edit
   aa = commit -a --amend --no-edit
   assume = update-index --assume-unchanged
@@ -52,23 +52,23 @@
   conflict = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim -p `f`"
   next = "!git add . && git rebase --continue"
   discart = "!git add . && git checkout -f"
-  aftermerge = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git checkout master; git pull --rebase; git remote prune origin; git branch -D $branch; }; f"
+  aftermerge = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git checkout main; git pull --rebase; git remote prune origin; git branch -D $branch; }; f"
   after = aftermerge
-  since-master = diff --name-only origin/master
-  outstanding-branches = "!f() { git branch | grep -vw master | grep -v '^*' | wc -l; }; f"
-  branch-master = "!f() { git branch $1 origin/master --no-track && git co $1; }; f"
-  branch-master-regular = "!f() { git branch-master "$1-`date +%Y%m%d`"; }; f"
+  since-main = diff --name-only origin/main
+  outstanding-branches = "!f() { git branch | grep -vw main | grep -v '^*' | wc -l; }; f"
+  branch-main = "!f() { git branch $1 origin/main --no-track && git co $1; }; f"
+  branch-main-regular = "!f() { git branch-main "$1-`date +%Y%m%d`"; }; f"
   latest-sha = log -n 1 --pretty=format:%H
   autofix = "!f() { git commit --fixup $(git latest-sha -- \"$GIT_PREFIX$1\") \"$GIT_PREFIX$1\"; }; f"
   superfix = "!for file in $(git ls-files -m); do git autofix $file; done"
-  bm = branch-master
+  bm = branch-main
   x = "!fork"
   tree = log --oneline --decorate --graph --abbrev-commit
   wip = "!f() { git add -A && git commit -m \"WIP\"; }; f"
   unwip = "!f() { git log -n 1 | grep -q -c \"WIP\" && git reset HEAD~1; }; f"
-  top = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git wip; git co master; git fp; git co $branch; git rebase master; git unwip; }; f"
+  top = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git wip; git co main; git fp; git co $branch; git rebase main; git unwip; }; f"
   open-pr = pull-request -o
-  nuke-all-branches = "!f() { git branch | grep -v 'master' | xargs git branch -D; }; f"
+  nuke-all-branches = "!f() { git branch | grep -v 'main' | xargs git branch -D; }; f"
   cob = checkout -b
   open = browse
   cm = "!f() { git commit -m \"$*\"; }; f"
