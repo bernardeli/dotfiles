@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+install_nix () {
+  sh <(curl -L https://nixos.org/nix/install)
+
+  . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+}
+
+if ! [ -x "$(command -v nix)" ]; then
+  echo "Installing Nix"
+
+  install_nix
+else
+  echo "Nix already installed, skipping"
+fi
+
+# TODO move to nix-shell --run
+echo "Installing Home Manager"
+nix-env -i home-manager
+
+echo "Applying Home Manager Configuration"
+home-manager switch

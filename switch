@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+export HOME_MANAGER_CONFIG=~/.dotfiles/home.nix
+home-manager switch

@@ -7,6 +7,7 @@ function append_path() {
 }
 
 prepend_path "/usr/local/bin"
+prepend_path "~/.cargo/bin"
 
 unset prepend_path
 unset append_path

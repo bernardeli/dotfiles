@@ -21,8 +21,15 @@ cab Tabnew tabnew
 cab REname Rename
 cab Renaem Rename
 cab REnaem Rename
-cab gblame Gblame
-cab GBlame Gblame
+cab gb GB
+cab Gb GB
+cab gbrowse GBrowse
+cab Gbrowse GBrowse
+cab gblame Git blame
+cab GBlame Git blame
+cab Gblame Git blame
 ab bp binding.pry
+ab tt ActsAsTenant.current_tenant
+ab aat ActsAsTenant
 ab sos save_and_open_screenshot <esc>
 ab sop save_and_open_page <esc>

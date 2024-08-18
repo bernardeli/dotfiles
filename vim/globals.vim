@@ -67,7 +67,7 @@ vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 nnoremap <F12> :source ~/.vimrc<CR>
 
 "clean up search
-map <C-L> :noh<CR>
+map <C-L> :noh<CR>:redraw!<CR>
 
 " Improve 'n' command (for searches)
 nmap n nzz

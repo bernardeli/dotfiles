@@ -65,6 +65,7 @@
   x = "!fork"
   tree = log --oneline --decorate --graph --abbrev-commit
   wip = "!f() { git add -A && git commit -m \"WIP\"; }; f"
+  swip = "!f() { git add -A && git commit -m \"WIP [ci skip]\"; }; f"
   unwip = "!f() { git log -n 1 | grep -q -c \"WIP\" && git reset HEAD~1; }; f"
   top = "!f() { branch=$(git rev-parse --abbrev-ref HEAD); git wip; git co main; git fp; git co $branch; git rebase main; git unwip; }; f"
   open-pr = pull-request -o

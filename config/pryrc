@@ -1,17 +1,55 @@
-class Object
-  def local_methods(obj = self)
-    (obj.methods - obj.class.superclass.instance_methods).sort
+custom_prompt = proc do
+  prefix = Pry::Helpers::Text.cyan(Lookout.env.upcase)
+  tenant = case
+           when $without_tenant_mode
+             "Running without tenant"
+           when ActsAsTenant.current_tenant.present?
+             ActsAsTenant.current_tenant.id
+           else
+             "No tenant set"
+           end
+
+  tenant = Pry::Helpers::Text.blue(tenant)
+
+  "<#{prefix}> [#{tenant}] ~ "
+end
+
+# Set the custom prompt using Pry.config.prompt=
+Pry.config.prompt = custom_prompt
+
+if defined?(Lookout)
+  # Flag to track whether to wrap subsequent commands in ActsAsTenant.without_tenant block
+  $without_tenant_mode = false
+
+  # Customize Pry to wrap commands in ActsAsTenant.without_tenant block when in $without_tenant_mode
+  Pry.config.commands.command 'nt!', "Enable ActsAsTenant.without_tenant mode" do
+    $without_tenant_mode = true
+    ActsAsTenant.current_tenant = nil
+    Pry.output.puts "ActsAsTenant.without_tenant mode enabled."
+  end
+
+  Pry.config.hooks.add_hook(:before_eval, 'acts_as_tenant_wrapper') do |eval_string, pry|
+    if $without_tenant_mode
+      eval_string.replace("ActsAsTenant.without_tenant do\n#{eval_string}\nend")
+    end
+  end
+
+  def tenant(id = 1)
+    $without_tenant_mode = false
+
+    company = Company.find(id); p
+    ActsAsTenant.current_tenant = company
+    puts "Tenant changed to #{company.id}"
+  end
+
+  def company
+    ActsAsTenant.current_tenant
+  end
+
+  # no tenant
+  def nt
+    ActsAsTenant.without_tenant do
+      yield
+    end
   end
 end
-
-def tenant(id = 1)
-  company = Company.find(id); p
-
-  ActsAsTenant.current_tenant = company
-end
-
-def company
-  ActsAsTenant.current_tenant
-end
-
-tenant(1)
