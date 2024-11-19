@@ -42,7 +42,7 @@ fresh config/direnvrc --file=~/.config/direnv/direnvrc
 fresh shell/ssh-linode-roulette --bin
 fresh shell/ssh-linode --bin
 
-fresh so-fancy/diff-so-fancy third_party/build_fatpack/diff-so-fancy --bin
+fresh so-fancy/diff-so-fancy diff-so-fancy --bin
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
