@@ -41,3 +41,4 @@ fgf() {
 }
 
 export DISABLE_SPRING=true
+export OP_SESSION_TIMEOUT=28800

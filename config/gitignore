@@ -61,3 +61,4 @@ cscope.in.out
 cscope.po.out
 
 .direnv
+.claude/settings.local.json

@@ -5,6 +5,6 @@ function bk() {
 
   branch=$2
   branch=${branch:-$(git rev-parse --abbrev-ref HEAD)}
-  branch=${branch:-master}
-  open "https://buildkite.com/thelookoutway/$project/builds?branch=$branch"
+  branch=${branch:-main}
+  open "https://github.com/thelookoutway/lookout/actions?query=branch:$branch"
 }

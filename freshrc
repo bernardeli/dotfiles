@@ -28,6 +28,7 @@ fresh shell/buildkite.sh
 fresh shell/rununtilfail.sh
 fresh shell/cheat.sh
 fresh shell/secrets.sh
+fresh shell/sdk.sh
 
 fresh zshrc --file
 fresh config/gitconfig --file
@@ -41,8 +42,6 @@ fresh config/bundle --file=~/.bundle/config
 fresh config/direnvrc --file=~/.config/direnv/direnvrc
 fresh shell/ssh-linode-roulette --bin
 fresh shell/ssh-linode --bin
-
-fresh so-fancy/diff-so-fancy diff-so-fancy --bin
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"

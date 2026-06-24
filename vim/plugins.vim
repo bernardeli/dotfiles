@@ -10,3 +10,6 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/matchit.zip'
 " Plug 'ycm-core/YouCompleteMe'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-solargraph'
+
+let g:coc_global_extensions = ['coc-solargraph']
