@@ -2,8 +2,7 @@
 
 ## Installation
 
-``` sh
-FRESH_LOCAL_SOURCE=bernardeli/dotfiles bash <(curl -sL get.freshshell.com)
+```sh
+git clone https://github.com/bernardeli/dotfiles ~/.dotfiles
+cd ~/.dotfiles && ./install.sh
 ```
-
-My dotfiles are managed by [fresh](http://freshshell.com).

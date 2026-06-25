@@ -8,7 +8,7 @@ done
 
 compinit -C
 
-fpath=(~/.fresh/build/completion $fpath)
+fpath=("$HOME/.dotfiles/zsh" $fpath)
 
 # Taken from robbyrussell/oh-my-zsh lib/completion.zsh
 
