@@ -1,0 +1,18 @@
+{
+  "model": "sonnet",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline-command.sh",
+    "refreshInterval": 5
+  },
+  "enabledPlugins": {},
+  "effortLevel": "medium",
+  "skipWorkflowUsageWarning": true,
+  "theme": "auto",
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": true,
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  }
+}

@@ -29,4 +29,8 @@ mkdir -p "$HOME/bin"
 link shell/ssh-linode         "$HOME/bin/ssh-linode"
 link shell/ssh-linode-roulette "$HOME/bin/ssh-linode-roulette"
 
+link claude/settings.json         "$HOME/.claude/settings.json"
+link claude/statusline-command.sh "$HOME/.claude/statusline-command.sh"
+link claude/skills                "$HOME/.claude/skills"
+
 echo "Done."
